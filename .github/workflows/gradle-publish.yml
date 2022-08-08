@@ -3,9 +3,9 @@ name: Gradle Package
 
 on:
   push:
-    branches: [ master ]
+    branches: [ main-gk ]
   pull_request:
-    branches: [ master ]
+    branches: [ main-gk ]
   workflow_dispatch:
 
 jobs:
