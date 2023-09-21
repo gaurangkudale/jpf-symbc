@@ -26,7 +26,3 @@ gradle :jpf-symbc:buildJars
 #Run SPF Tests
 echo "Run SPF Tests"
 gradle :jpf-symbc:test
-
-#keep container running
-echo "Keep container running"
-tail -f /dev/null
