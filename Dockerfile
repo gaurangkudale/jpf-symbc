@@ -18,6 +18,8 @@ RUN wget -q "https://services.gradle.org/distributions/gradle-${GRADLE_VERSION}-
 
 # Clone the Git repository
 RUN git clone --recurse-submodules https://github.com/gaurangkudale/SPF.git -b SPF .
+# Add commands to checkout Git submodules
+RUN git submodule update --init --recursive
 
 # Add any additional setup or configuration steps here
 
